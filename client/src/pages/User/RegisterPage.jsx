@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import "./RegisterPage.css"
 
 const RegisterPage = () => {
   const [formData, setFormData] = useState({
@@ -107,7 +108,6 @@ const RegisterPage = () => {
           </label>
         </div>
 
-        {/* I am doing it to group items into columns :3 */}
         <div className="form-part">
           <label>
             Mobile Number:
@@ -167,7 +167,7 @@ const RegisterPage = () => {
             />
           </label>
 
-          <div>Have an account? Log in</div>
+          <div className="alrdyacc">Have an account? Log in</div>
         </div>
 
         <button type="submit">Register</button>
