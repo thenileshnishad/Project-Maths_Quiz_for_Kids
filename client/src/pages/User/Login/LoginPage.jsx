@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
+import "./LoginPage.css"
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +22,7 @@ const LoginPage = () => {
   }
 
   return (
-    <div>
+    <div className="login-form">
       <h2>User Login</h2>
 
       <form onSubmit={handleSubmit}>
